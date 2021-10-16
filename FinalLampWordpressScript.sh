@@ -346,6 +346,7 @@ if [ $status1 -eq 1 ]
 fi
 sleep 10
 clear
+
 echo "###########################################################"
 echo "#                                                         #"
 echo "#  Congratulations! LAMP Stack and Wordpress Insttalled   #"
