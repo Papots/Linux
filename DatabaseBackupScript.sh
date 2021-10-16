@@ -7,7 +7,8 @@ echo "#                                           #"
 echo "#############################################"
 cd /opt/
 mkdir backups
-mysqldump -u root -p$password wordpress </opt/backups/wordpress_10-15-21.sql
+pass=papots
+mysqldump -u root -p$pass wordpress >/opt/backups/wordpress_10-15-21.sql
 
 echo "#############################################"
 echo "#                                           #"
@@ -33,7 +34,7 @@ if [ $var1 -eq 1 ]
 	echo "Backup Compressed!"
 	sleep 3
 	clear
-	echo "#############################################"
+    echo "#############################################"
     echo "#                                           #"
     echo "#              BUCKUP DONE!                 #"
     echo "#                                           #"
